@@ -11,7 +11,20 @@ class Student {
 	/*E.  For the Student class, do the following:
 	1.  Create the class Student in the files student.h and student.cpp, 
 	which includes each of the following private variables, using the 
-	correct data type for each:*/
+	correct data type for each:
+	 student ID (string)
+
+•   first name (string)
+
+•   last name (string)
+
+•   email address (string)
+
+•   age (integer)
+
+•   number of days to complete each course (array of integers)
+
+•   degree program (DegreeProgram)*/
 
 public:
 	const static int courses = 3;

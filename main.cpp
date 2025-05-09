@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//G.Demonstrate the program's required functionality by adding a main() function in main.cpp, which will contain the required function calls to achieve the following results:
 int main() {
 
 
@@ -42,32 +43,60 @@ int main() {
 		classRoster.parseStudentData(studentData[i]); 
 	}
 
-	//print class roster
+	/*4.  Convert the following pseudo code to complete the rest of the main() function:
+
 	classRoster.printAll();
 
+	classRoster.printInvalidEmails();
+
+
+
+	//loop through classRosterArray and for each element:
+
+	classRoster.printAverageDaysInCourse(/*current_object's student id
+
+
+
+	classRoster.printByDegreeProgram(SOFTWARE);
+
+	classRoster.remove("A3");
+
+	classRoster.printAll();
+
+	classRoster.remove("A3");
+
+	//expected: the above line should print a message saying such a student with this ID was not found.
+
+	//call the destructor to release the roster object from memory
+	*/
+
+	//print class roster
+	cout << "Students: " << endl;
+	classRoster.printAll();
 	cout << endl;
 	
 	//print invalid emails
 	cout << "Invalid emails: " << endl;
 	classRoster.printInvalidEmails();
-
 	cout << endl;
 
-	
+	//print average days for each student
+	cout << "Average days for each student:" << endl;
 	for (int i = 0; i < amtOfStuds; i++)
 	{
 		classRoster.printAverageDaysInCourse(classRoster.classRosterArray[i]->getStudentID());
 	}
-	
 	cout << endl;
 
-
+	cout << "Students in SOFTWARE program: " << endl;
 	classRoster.printByDegreeProgram(SOFTWARE);
 	cout << endl;
 
 	classRoster.remove("A3");
 	
+	cout << "Students: " << endl;
 	classRoster.printAll();
+	cout << endl;
 
 	classRoster.remove("A3");
 };
